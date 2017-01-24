@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<meta name="author" content="Simi Fagbemi">
+	<body>
+		<a href="main.html">Return to homepage</a>
+		<table>
+				<tr>
+					<td>Display Name</td>
+					<td>  <input name="DisplayName" required /> 
+						<span id="DisplayNameText"> JJ </span>
+					</td>
+				</tr>
+
+				<tr>
+					<td>E-mail Address</td>
+					<td><input name="Email" type="email" /> 
+						<span id="EmailText"> abc123@gmail.com </span>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Phone Number (format: 5555555555) </td>
+					<td><input name="PhoneNumber" required type="tel" pattern="\d{10}" />
+						<span id="PhoneNumberText"> 5555555555 </span>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Zipcode (format: 55555) </td>
+					<td><input name="Zipcode" type="number" required />
+						<span id="ZipcodeText"> 55555 </span>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Password</td>
+					<td><input name="Password" required type="password" />
+						<span id="PasswordText"> password </span>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Password Confirmation</td>
+					<td><input name="PasswordConfirmation" type="password" required />
+						<span id="PasswordConfirmationText"> password </span>
+					</td>
+				</tr>
+				
+			<tr><td colspan="2"><input type="button" value="Update"/ id="update" onclick="updateVals()"><br />
+			</td></tr>
+		</table>
+
+	</body>
+</html>
+
+
+<SCRIPT SRC="profile.js">
+</SCRIPT>
